@@ -6,3 +6,4 @@ RUN apt update \
   && rm -rf /var/lib/apt/lists/*
 
 RUN pip install jax jaxlib jupyterlab torch torchvision tensorboard
+RUN pip install tqdm
