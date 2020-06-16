@@ -30,3 +30,4 @@ RUN ./bin/install-mecab-ipadic-neologd -n -y
 COPY . /opt/api
 WORKDIR /opt/api
 RUN pip install mecab-python
+RUN pip install gensim
