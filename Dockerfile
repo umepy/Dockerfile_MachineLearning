@@ -6,7 +6,6 @@ RUN apt update \
   && rm -rf /var/lib/apt/lists/*
 
 RUN pip install jax jaxlib jupyterlab torch torchvision tensorboard
-RUN pip install tqdm
 
 WORKDIR /opt
 RUN git clone https://github.com/taku910/mecab.git
@@ -31,3 +30,6 @@ COPY . /opt/api
 WORKDIR /opt/api
 RUN pip install mecab-python
 RUN pip install gensim
+RUN pip install emoji
+RUN pip install neologdn
+RUN pip install tqdm
