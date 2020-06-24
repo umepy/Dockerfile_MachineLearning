@@ -1,0 +1,12 @@
+jax
+jaxlib
+jupyterlab
+torch
+torchvision 
+tensorboard
+tensorflow
+mecab-python
+gensim
+emoji
+neologdn
+tqdm

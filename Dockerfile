@@ -5,8 +5,6 @@ RUN apt update \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
-RUN pip install jax jaxlib jupyterlab torch torchvision tensorboard
-
 WORKDIR /opt
 RUN git clone https://github.com/taku910/mecab.git
 WORKDIR /opt/mecab/mecab
@@ -26,10 +24,6 @@ RUN git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
 WORKDIR /opt/mecab-ipadic-neologd
 RUN ./bin/install-mecab-ipadic-neologd -n -y
 
-COPY . /opt/api
-WORKDIR /opt/api
-RUN pip install mecab-python
-RUN pip install gensim
-RUN pip install emoji
-RUN pip install neologdn
-RUN pip install tqdm
+RUN pip install --upgrade pip
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
