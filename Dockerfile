@@ -1,4 +1,4 @@
-FROM python:3.8-buster
+FROM pytorch/pytorch:latest
 
 RUN apt update \
   && apt install -y libpq5 libxml2 \
