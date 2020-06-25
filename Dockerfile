@@ -1,7 +1,7 @@
 FROM pytorch/pytorch:latest
 
 RUN apt update \
-  && apt install -y libpq5 libxml2 \
+  && apt install -y libpq5 libxml2 file git curl build-essential \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
