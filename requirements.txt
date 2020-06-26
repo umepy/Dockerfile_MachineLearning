@@ -8,3 +8,4 @@ gensim
 emoji
 neologdn
 tqdm
+scikit-learn
