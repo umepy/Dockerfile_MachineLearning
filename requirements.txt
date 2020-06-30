@@ -9,3 +9,4 @@ emoji
 neologdn
 tqdm
 scikit-learn
+seaborn
