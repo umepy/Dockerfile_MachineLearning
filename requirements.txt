@@ -10,3 +10,5 @@ neologdn
 tqdm
 scikit-learn
 seaborn
+lightgbm==2.2.3
+xgboost
