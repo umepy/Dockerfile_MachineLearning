@@ -3,6 +3,7 @@ jaxlib
 jupyterlab
 tensorboard
 tensorflow
+torch
 mecab-python
 gensim
 emoji
